@@ -1,15 +1,94 @@
 {
   "endpointErrors": {
-    "_internal.update_desired_nodes": {
+    "async_search.get": {
       "request": [
-        "Request: query parameter 'master_timeout' does not exist in the json spec",
-        "Request: query parameter 'timeout' does not exist in the json spec"
+        "Request: missing json spec query parameter 'return_intermediate_results'"
       ],
       "response": []
     },
-    "capabilities": {
+    "async_search.submit": {
       "request": [
-        "Request: query parameter 'timeout' does not exist in the json spec"
+        "Request: query parameter 'project_routing' does not exist in the json spec"
+      ],
+      "response": []
+    },
+    "cat.count": {
+      "request": [
+        "Request: query parameter 'project_routing' does not exist in the json spec"
+      ],
+      "response": []
+    },
+    "count": {
+      "request": [
+        "Request: query parameter 'project_routing' does not exist in the json spec"
+      ],
+      "response": []
+    },
+    "eql.search": {
+      "request": [
+        "Request: query parameter 'project_routing' does not exist in the json spec"
+      ],
+      "response": []
+    },
+    "field_caps": {
+      "request": [
+        "Request: query parameter 'project_routing' does not exist in the json spec"
+      ],
+      "response": []
+    },
+    "indices.resolve_index": {
+      "request": [
+        "Request: query parameter 'project_routing' does not exist in the json spec"
+      ],
+      "response": []
+    },
+    "ml.stop_datafeed": {
+      "request": [
+        "Request: missing json spec query parameter 'close_job'"
+      ],
+      "response": []
+    },
+    "open_point_in_time": {
+      "request": [
+        "Request: query parameter 'project_routing' does not exist in the json spec"
+      ],
+      "response": []
+    },
+    "search": {
+      "request": [
+        "Request: query parameter 'project_routing' does not exist in the json spec"
+      ],
+      "response": []
+    },
+    "search_mvt": {
+      "request": [
+        "Request: query parameter 'project_routing' does not exist in the json spec"
+      ],
+      "response": []
+    },
+    "search_template": {
+      "request": [
+        "Request: query parameter 'project_routing' does not exist in the json spec"
+      ],
+      "response": []
+    },
+    "sql.query": {
+      "request": [
+        "Request: query parameter 'project_routing' does not exist in the json spec"
+      ],
+      "response": []
+    },
+    "streams.logs_disable": {
+      "request": [
+        "Request: url path '/_streams/logs/_disable' not found in the json spec",
+        "Request: missing json spec path parameter 'name'"
+      ],
+      "response": []
+    },
+    "streams.logs_enable": {
+      "request": [
+        "Request: url path '/_streams/logs/_enable' not found in the json spec",
+        "Request: missing json spec path parameter 'name'"
       ],
       "response": []
     }
