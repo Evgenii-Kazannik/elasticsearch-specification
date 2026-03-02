@@ -5316,6 +5316,27 @@
     },
     {
       "availability": {
+        "stack": {
+          "featureFlag": "esql_views"
+        }
+      },
+      "description": "Delete a non-materialized VIEW for ESQL.",
+      "docUrl": "https://www.elastic.co/docs/api/doc/elasticsearch/operation/operation-esql-view-delete",
+      "name": "esql.delete_view",
+      "request": null,
+      "requestBodyRequired": false,
+      "response": null,
+      "urls": [
+        {
+          "methods": [
+            "DELETE"
+          ],
+          "path": "/_query/view/{name}"
+        }
+      ]
+    },
+    {
+      "availability": {
         "serverless": {
           "stability": "experimental",
           "visibility": "public"
@@ -5361,6 +5382,33 @@
     },
     {
       "availability": {
+        "stack": {
+          "featureFlag": "esql_views"
+        }
+      },
+      "description": "Get a non-materialized VIEW for ESQL.",
+      "docUrl": "https://www.elastic.co/docs/api/doc/elasticsearch/operation/operation-esql-view-get",
+      "name": "esql.get_view",
+      "request": null,
+      "requestBodyRequired": false,
+      "response": null,
+      "urls": [
+        {
+          "methods": [
+            "GET"
+          ],
+          "path": "/_query/view/{name}"
+        },
+        {
+          "methods": [
+            "GET"
+          ],
+          "path": "/_query/view"
+        }
+      ]
+    },
+    {
+      "availability": {
         "serverless": {
           "stability": "experimental",
           "visibility": "public"
@@ -5401,6 +5449,27 @@
             "GET"
           ],
           "path": "/_query/queries"
+        }
+      ]
+    },
+    {
+      "availability": {
+        "stack": {
+          "featureFlag": "esql_views"
+        }
+      },
+      "description": "Creates a non-materialized VIEW for ESQL.",
+      "docUrl": "https://www.elastic.co/docs/api/doc/elasticsearch/operation/operation-esql-view-put",
+      "name": "esql.put_view",
+      "request": null,
+      "requestBodyRequired": true,
+      "response": null,
+      "urls": [
+        {
+          "methods": [
+            "PUT"
+          ],
+          "path": "/_query/view/{name}"
         }
       ]
     },
@@ -10177,6 +10246,28 @@
     },
     {
       "availability": {
+        "stack": {
+          "stability": "experimental",
+          "visibility": "public"
+        }
+      },
+      "description": "Perform embedding inference on the service",
+      "docUrl": "https://www.elastic.co/docs/api/doc/elasticsearch/operation/operation-inference-embedding",
+      "name": "inference.embedding",
+      "request": null,
+      "requestBodyRequired": true,
+      "response": null,
+      "urls": [
+        {
+          "methods": [
+            "POST"
+          ],
+          "path": "/_inference/embedding/{inference_id}"
+        }
+      ]
+    },
+    {
+      "availability": {
         "serverless": {
           "stability": "stable",
           "visibility": "public"
@@ -11239,6 +11330,28 @@
             "PUT"
           ],
           "path": "/_inference/{task_type}/{mistral_inference_id}"
+        }
+      ]
+    },
+    {
+      "availability": {
+        "stack": {
+          "stability": "stable",
+          "visibility": "public"
+        }
+      },
+      "description": "Create an Nvidia inference endpoint",
+      "docUrl": "https://www.elastic.co/docs/api/doc/elasticsearch/operation/operation-inference-put-nvidia",
+      "name": "inference.put_nvidia",
+      "request": null,
+      "requestBodyRequired": true,
+      "response": null,
+      "urls": [
+        {
+          "methods": [
+            "PUT"
+          ],
+          "path": "/_inference/{task_type}/{nvidia_inference_id}"
         }
       ]
     },
@@ -17027,6 +17140,116 @@
     },
     {
       "availability": {
+        "stack": {
+          "stability": "experimental",
+          "visibility": "public"
+        }
+      },
+      "description": "Create or update named project routing expressions",
+      "docUrl": "https://www.elastic.co/docs/api/doc/elasticsearch#TODO",
+      "name": "project.create_many_routing",
+      "request": null,
+      "requestBodyRequired": true,
+      "response": null,
+      "urls": [
+        {
+          "methods": [
+            "PUT"
+          ],
+          "path": "/_project_routing"
+        }
+      ]
+    },
+    {
+      "availability": {
+        "stack": {
+          "stability": "experimental",
+          "visibility": "public"
+        }
+      },
+      "description": "Create or update named project routing expression",
+      "docUrl": "https://www.elastic.co/docs/api/doc/elasticsearch#TODO",
+      "name": "project.create_routing",
+      "request": null,
+      "requestBodyRequired": true,
+      "response": null,
+      "urls": [
+        {
+          "methods": [
+            "PUT"
+          ],
+          "path": "/_project_routing/{name}"
+        }
+      ]
+    },
+    {
+      "availability": {
+        "stack": {
+          "stability": "experimental",
+          "visibility": "public"
+        }
+      },
+      "description": "Delete named project routing expression",
+      "docUrl": "https://www.elastic.co/docs/api/doc/elasticsearch#TODO",
+      "name": "project.delete_routing",
+      "request": null,
+      "requestBodyRequired": false,
+      "response": null,
+      "urls": [
+        {
+          "methods": [
+            "DELETE"
+          ],
+          "path": "/_project_routing/{name}"
+        }
+      ]
+    },
+    {
+      "availability": {
+        "stack": {
+          "stability": "experimental",
+          "visibility": "public"
+        }
+      },
+      "description": "Get named project routing expressions",
+      "docUrl": "https://www.elastic.co/docs/api/doc/elasticsearch#TODO",
+      "name": "project.get_many_routing",
+      "request": null,
+      "requestBodyRequired": false,
+      "response": null,
+      "urls": [
+        {
+          "methods": [
+            "GET"
+          ],
+          "path": "/_project_routing"
+        }
+      ]
+    },
+    {
+      "availability": {
+        "stack": {
+          "stability": "experimental",
+          "visibility": "public"
+        }
+      },
+      "description": "Get named project routing expression",
+      "docUrl": "https://www.elastic.co/docs/api/doc/elasticsearch#TODO",
+      "name": "project.get_routing",
+      "request": null,
+      "requestBodyRequired": false,
+      "response": null,
+      "urls": [
+        {
+          "methods": [
+            "GET"
+          ],
+          "path": "/_project_routing/{name}"
+        }
+      ]
+    },
+    {
+      "availability": {
         "serverless": {
           "stability": "experimental",
           "visibility": "public"
@@ -17583,6 +17806,69 @@
         {
           "methods": [
             "POST"
+          ],
+          "path": "/_reindex"
+        }
+      ]
+    },
+    {
+      "availability": {
+        "stack": {
+          "featureFlag": "reindex_resilience"
+        }
+      },
+      "description": "Cancel a reindex operation",
+      "docUrl": "https://www.elastic.co/docs/api/doc/elasticsearch#TODO",
+      "name": "reindex_cancel",
+      "request": null,
+      "requestBodyRequired": false,
+      "response": null,
+      "urls": [
+        {
+          "methods": [
+            "POST"
+          ],
+          "path": "/_reindex/{task_id}/_cancel"
+        }
+      ]
+    },
+    {
+      "availability": {
+        "stack": {
+          "featureFlag": "reindex_resilience"
+        }
+      },
+      "description": "Get information for a reindex operation",
+      "docUrl": "https://www.elastic.co/docs/api/doc/elasticsearch#TODO",
+      "name": "reindex_get",
+      "request": null,
+      "requestBodyRequired": false,
+      "response": null,
+      "urls": [
+        {
+          "methods": [
+            "GET"
+          ],
+          "path": "/_reindex/{task_id}"
+        }
+      ]
+    },
+    {
+      "availability": {
+        "stack": {
+          "featureFlag": "reindex_resilience"
+        }
+      },
+      "description": "List all running reindex operations",
+      "docUrl": "https://www.elastic.co/docs/api/doc/elasticsearch#TODO",
+      "name": "reindex_list",
+      "request": null,
+      "requestBodyRequired": false,
+      "response": null,
+      "urls": [
+        {
+          "methods": [
+            "GET"
           ],
           "path": "/_reindex"
         }
